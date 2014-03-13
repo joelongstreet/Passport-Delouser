@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class PassportDelouserTest < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, PassportDelouser
+
+  def test_to_hash_has_method_dig
+    assert Hash.method_defined?(:dig), 'Dig is not defined :('
   end
+  
 end
